@@ -5,6 +5,7 @@ The fashion sector was responsible for about 2.1 billion metric tons of greenhou
 
 
 ## Roadmap
+- [ ] add variable in Closet Item Schema for if it's broken
 - [ ] add item categories for sorting
 - [ ] add random creation of outfits
 - [ ] add swap or borrow requests
