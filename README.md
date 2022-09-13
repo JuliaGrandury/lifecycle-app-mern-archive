@@ -5,14 +5,14 @@ The fashion sector was responsible for about 2.1 billion metric tons of greenhou
 
 
 ## Roadmap
-- [] add item categories for sorting
-- [] add random creation of outfits
-- [] add swap or borrow requests
-- [] add wishlist
+- [ ] add item categories for sorting
+- [ ] add random creation of outfits
+- [ ] add swap or borrow requests
+- [ ] add wishlist
 
 
 ## Resources
 - [MERN Stack Front To Back: Full Stack React, Redux & Node.js](https://www.udemy.com/course/mern-stack-front-to-back/)
+- [How to Build a Multi-Step Registration App with Animated Transitions Using the MERN Stack](https://www.freecodecamp.org/news/build-a-multi-step-registration-app-with-animated-transitions-using-mern-stack/)
 - [MERN Tutorial For Beginners | Learn MERN In 60 Minutes](https://www.youtube.com/watch?v=I7EDAR2GRVo)
 - [Learn The MERN Stack - Express & MongoDB Rest API](https://www.youtube.com/watch?v=-0exw-9YJBo)
-
