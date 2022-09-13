@@ -70,10 +70,10 @@ Lifecycle is meant to help users organize and keep track of what they own in ord
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [!MongoDB]()
-* [!Express.js]()
-* [![React][React.js]][React-url]
-* [!Next.js]()
+* ![MongoDB](https://www.mongodb.com/)
+* ![Express.js](https://expressjs.com/)
+* ![React][React.js]][React-url]
+* ![Next.js](https://nextjs.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,17 +109,6 @@ _Below is an example of how you can instruct your audience on installing and set
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
