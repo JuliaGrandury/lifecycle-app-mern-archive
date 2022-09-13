@@ -3,18 +3,17 @@
 ## About
 The fashion sector was responsible for about 2.1 billion metric tons of greenhouse-gas (GHG) emissions in 2018, which is 4 percent of the global total. For context,  this means it emits about the same quantity of GHGs per year as the **entire economies of France, Germany, and the United Kingdom combined**. - [McKinsey Research](https://www.mckinsey.com/industries/retail/our-insights/fashion-on-climate)
 
-Built this app to help users with their closet organization and keep track of what they own in order to avoid unnecessary purchases.
-I also built it in the hopes of encouraging swaps and exchanges of clothing between friends and family.
-Absence makes the heart grow fonder and sometimes that is all we need to want to wear an item again.
+Lifecycle is meant to help users organize and keep track of what they own in order to avoid unnecessary purchases. It also facilitates and encourages swaps and exchanges of clothing between friends and family. The philosophy behind it? Humans thrive on novelty. Our midbrain (particularly the substantia nigra/ventral segmental area) responds to novel stimuli by directly activating the dopaminergic system in our brain. In other words, it makes us feel good. But we don't need to buy new clothes in order to produce that reaction. Borrowing a 'new' item from a friend's closet or lending an item, forgetting about it and then getting it back a couple of weeks later can produce the same reaction. Absence makes the heart grow fonder and sometimes that is all we need to want to wear our favorite items again. 
 
-TLDR; I built this app to help users track the items in their closet and encourage clothes swaps or exchanges in hopes of fighting unnecessary consumption.
+**TLDR**; This app is meant to help users track the items in their closet and encourage clothes swaps or exchanges in hopes of fighting unnecessary consumption.
 
 ## Roadmap
-- [ ] add variable in Closet Item Schema for if it's broken
-- [ ] add item categories for sorting
+- [ ] add category of broken items
+- [ ] add category of out of closet items (lent or in repair)
+- [ ] add item categories for sorting (top, bottom, shoes, accessories, etc)
 - [ ] add random creation of outfits
 - [ ] add swap or borrow requests
-- [ ] add wishlist
+- [ ] add wishlist of new items
 
 
 ## Resources
