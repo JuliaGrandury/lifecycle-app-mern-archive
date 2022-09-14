@@ -5,7 +5,7 @@ const errorHandler = (err, req, res, next) => {
 
     //To only show the stack line numbers of the error if in development mode (not production mode)
     res.json({
-        messsage: err.message,
+        message: err.message,
         stack: process.env.NODE_ENV === 'production' ? null : err.stack
     })
 }
