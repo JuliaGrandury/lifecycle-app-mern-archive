@@ -39,13 +39,12 @@ const updateClosetItem = asyncHandler(async (req, res) => {
     }
 
     // Get User and handle if it doesn't exist
-    const user = await User.findById(req.user.id)
-    if (!user) {
+    if (!req.user) {
         res.status(401)
         throw new Error('User not found')
     }
     // Verify that logged in user and closet user match
-    if(closetItem.user.toString() !== user.id) {
+    if(closetItem.user.toString() !== req.user.id) {
         res.status(401)
         throw new Error('User not authorized')
     }
@@ -65,13 +64,12 @@ const deleteClosetItem = asyncHandler(async (req, res) => {
     }
 
     // Get User and handle if it doesn't exist
-    const user = await User.findById(req.user.id)
-    if (!user) {
+    if (!req.user) {
         res.status(401)
         throw new Error('User not found')
     }
     // Verify that logged in user and closet user match
-    if(closetItem.user.toString() !== user.id) {
+    if(closetItem.user.toString() !== req.user.id) {
         res.status(401)
         throw new Error('User not authorized')
     }
