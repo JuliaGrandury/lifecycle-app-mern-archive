@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className='container'>
+        <div className="container">
           <Header />
           {/* Can't have anything other than routes in the routes tags */}
           <Routes>
