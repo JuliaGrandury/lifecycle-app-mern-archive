@@ -163,14 +163,11 @@ Project Link: [https://github.com/JuliaGrandury/lifecycle-app-mern](https://gith
 <!-- LESSONS LEARNED -->
 <details>
   <summary>Overview of Lessons Learned</summary>
-  <ol>
-    <li>The intricacies of complete CRUD functionality with MERN [resource](https://www.youtube.com/watch?v=I7EDAR2GRVo)</li>
-    <li>Authentication and storing user information safely with Hashing and Salts in Bcrypt.js [resource](https://www.youtube.com/watch?v=ro1WmoP4CZs)</li>
-    <li>Authorization and protecting routes with JSON Web Tokens [resource](https://www.youtube.com/watch?v=7Q17ubqLfaM)</li>
-    <li>Using ThunderClient and Postman for HTTP requests in API development [resource](https://www.youtube.com/watch?v=I7EDAR2GRVo)</li>
-    <li>A helpful course: [MERN Stack Front To Back: Full Stack React, Redux & Node.js](https://www.udemy.com/course/mern-stack-front-to-back/)</li>
-  </ol>
-  </summary>
+  - The intricacies of complete CRUD functionality with MERN [resource](https://www.youtube.com/watch?v=I7EDAR2GRVo)
+  - Authentication and storing user information safely with Hashing and Salts in Bcrypt.js [resource](https://www.youtube.com/watch?v=ro1WmoP4CZs)
+  - Authorization and protecting routes with JSON Web Tokens [resource](https://www.youtube.com/watch?v=7Q17ubqLfaM)
+  - Using ThunderClient and Postman for HTTP requests in API development [resource](https://www.youtube.com/watch?v=I7EDAR2GRVo)
+  - A helpful course: [MERN Stack Front To Back: Full Stack React, Redux & Node.js](https://www.udemy.com/course/mern-stack-front-to-back/)
 </details> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
