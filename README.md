@@ -70,10 +70,11 @@ Lifecycle is meant to help users organize and keep track of what they own in ord
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* ![MongoDB](https://www.mongodb.com/)
-* ![Express.js](https://expressjs.com/)
-* ![React][React.js]][React-url]
-* ![Next.js](https://nextjs.org/)
+* [MongoDB](https://www.mongodb.com/)
+* [Express.js](https://expressjs.com/)
+* [React](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Node.js](https://nodejs.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
