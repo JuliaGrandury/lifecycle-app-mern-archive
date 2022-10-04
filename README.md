@@ -116,10 +116,12 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- ROADMAP -->
 ## Roadmap
+- [ ] add tabs "Closets" (subtabs of my closet (in closet/out of closet), X closet, Y closet), "Outfits" (Saved || Randomize)
 - [ ] add category of broken items
+- [ ] add pack a suitcase feature
 - [ ] add category of out of closet items (lent or in repair)
 - [ ] add item categories for sorting (top, bottom, shoes, accessories, etc)
-- [ ] add random creation of outfits
+- [ ] add random creation of outfits and saved outfits
 - [ ] add swap or borrow requests
 - [ ] add wishlist of new items
 
