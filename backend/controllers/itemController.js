@@ -1,39 +1,39 @@
 const asyncHandler = require('express-async-handler')
 
-const Closet = require('../models/closetModel')
+const Item = require('../models/itemModel')
 const User = require('../models/userModel')
 
-// @desc Get closet of specific user
-// @route GET /api/closet
+// @desc Get items of specific user
+// @route GET /api/items
 // @acces Private
-const getCloset = asyncHandler(async (req, res) => {
-    const closet = await Closet.find({ user: req.user.id })
-    res.status(200).json(closet)
+const getItems = asyncHandler(async (req, res) => {
+    const items = await Item.find({ user: req.user.id })
+    res.status(200).json(items)
 })
 
 // @desc Set closet item
-// @route POST /api/closet
+// @route POST /api/items
 // @acces Private
-const setClosetItem = asyncHandler(async (req, res) => {
+const setItem = asyncHandler(async (req, res) => {
     if (!req.body.text) {
         res.status(400)
         throw new Error('Please add a text field')
     }
 
-    const closet = await Closet.create({
+    const item = await Item.create({
         text: req.body.text,
         user: req.user.id,
     })
 
-    res.status(200).json(closet)
+    res.status(200).json(item)
 })
 
 // @desc Update closet item
-// @route PUT /api/closet/:id
+// @route PUT /api/items/:id
 // @acces Private
-const updateClosetItem = asyncHandler(async (req, res) => {
-    const closetItem = await Closet.findById(req.params.id)
-    if (!closetItem) {
+const updateItem = asyncHandler(async (req, res) => {
+    const item = await Item.findById(req.params.id)
+    if (!item) {
         res.status(400)
         throw new Error('Closet item not found')
     }
@@ -44,21 +44,21 @@ const updateClosetItem = asyncHandler(async (req, res) => {
         throw new Error('User not found')
     }
     // Verify that logged in user and closet user match
-    if(closetItem.user.toString() !== req.user.id) {
+    if(item.user.toString() !== req.user.id) {
         res.status(401)
         throw new Error('User not authorized')
     }
 
-    const updatedClosetItem = await Closet.findByIdAndUpdate(req.params.id, req.body, { new: true })
-    res.status(200).json(updatedClosetItem)
+    const updatedItem = await Item.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    res.status(200).json(updatedItem)
 })
 
 // @desc Delete closet item
-// @route DELETE /api/closet/:id
+// @route DELETE /api/items/:id
 // @acces Private
-const deleteClosetItem = asyncHandler(async (req, res) => {
-    const closetItem = await Closet.findById(req.params.id)
-    if (!closetItem) {
+const deleteItem = asyncHandler(async (req, res) => {
+    const item = await Item.findById(req.params.id)
+    if (!item) {
         res.status(400)
         throw new Error('Closet item not found')
     }
@@ -69,18 +69,18 @@ const deleteClosetItem = asyncHandler(async (req, res) => {
         throw new Error('User not found')
     }
     // Verify that logged in user and closet user match
-    if(closetItem.user.toString() !== req.user.id) {
+    if(item.user.toString() !== req.user.id) {
         res.status(401)
         throw new Error('User not authorized')
     }
 
-    await closetItem.remove()
+    await item.remove()
     res.status(200).json({ id: req.params.id })
 })
 
 module.exports = {
-    getCloset,
-    setClosetItem,
-    updateClosetItem,
-    deleteClosetItem,
+    getItems,
+    setItem,
+    updateItem,
+    deleteItem,
 }
