@@ -24,9 +24,21 @@ const getItems = async (token) => {
     return response.data
 }
 
+// Delete a closet item
+const deleteItem = async (itemId, token) => {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+    }
+    const response = await axios.delete(API_URL + itemId, config)
+    return response.data
+}
+
 const itemService = {
     createItem,
-    getItems
+    getItems,
+    deleteItem
 }
 
 export default itemService
