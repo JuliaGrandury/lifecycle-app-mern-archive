@@ -7,28 +7,34 @@ const itemSchema = mongoose.Schema(
             required: true,
             ref: 'User',
         },
-        text: {
+        name: {
             type: String,
             required: [true, 'Please add a name for the item'],
         },
-        // color : {
+        // image: {
         //     type: String,
-        //     required: [true, 'Please add a color for the item'],
+        //     required: [false],
         // },
-        // category : {
-        //     type: String,
-        //     required: [true, 'Please add a category for the item'],
-        // },
-        // season: {
-        //     type: String,
-        //     required: [true, 'Please add a season for the item'],
-        // },
-        // inCloset: {
-        //     type: Boolean,
-        // },
-        // toRepair: {
-        //     type: Boolean,
-        // }
+        color : {
+            type: String,
+            required: [true, 'Please add a color for the item'],
+        },
+        category : {
+            type: String,
+            required: [true, 'Please add a category for the item'],
+        },
+        season: {
+            type: String,
+            required: [true, 'Please add a season for the item'],
+        },
+        incloset: {
+            type: Boolean,
+            default: true,
+        },
+        torepair: {
+            type: Boolean,
+            default: false,
+        }
     },
     {
         timestamps: true,

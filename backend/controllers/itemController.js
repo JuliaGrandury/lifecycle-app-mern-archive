@@ -1,3 +1,4 @@
+const { default: _default } = require('concurrently')
 const asyncHandler = require('express-async-handler')
 
 const Item = require('../models/itemModel')
@@ -15,14 +16,34 @@ const getItems = asyncHandler(async (req, res) => {
 // @route POST /api/items
 // @acces Private
 const setItem = asyncHandler(async (req, res) => {
-    if (!req.body.text) {
+    if (!req.body.name) {
         res.status(400)
-        throw new Error('Please add a text field')
+        throw new Error('Please add an item name field')
+    }
+
+    if (!req.body.color) {
+        res.status(400)
+        throw new Error('Please add a color field')
+    }
+
+    if (!req.body.category) {
+        res.status(400)
+        throw new Error('Please add a category field')
+    }
+
+    if (!req.body.season) {
+        res.status(400)
+        throw new Error('Please add a season field')
     }
 
     const item = await Item.create({
-        text: req.body.text,
         user: req.user.id,
+        name: req.body.name,
+        color: req.body.color,
+        category: req.body.category,
+        season: req.body.season,
+        incloset: _default,
+        torepair: _default,
     })
 
     res.status(200).json(item)
