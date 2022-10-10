@@ -7,10 +7,28 @@ const itemSchema = mongoose.Schema(
             required: true,
             ref: 'User',
         },
-        text: {
+        name: {
             type: String,
-            required: [true, 'Please add an item to the closet'],
+            required: [true, 'Please add a name for the item'],
         },
+        color : {
+            type: String,
+            required: [true, 'Please add a color for the item'],
+        },
+        // category : {
+        //     type: String,
+        //     required: [true, 'Please add a category for the item'],
+        // },
+        // season: {
+        //     type: String,
+        //     required: [true, 'Please add a season for the item'],
+        // },
+        // inCloset: {
+        //     type: Boolean,
+        // },
+        // toRepair: {
+        //     type: Boolean,
+        // }
     },
     {
         timestamps: true,
@@ -18,16 +36,3 @@ const itemSchema = mongoose.Schema(
 )
 
 module.exports = mongoose.model('Item', itemSchema)
-
-
-//ITEMS IN CLOSET SCHEMA
-// [{
-//     referenceId: Number,
-//     name: String,
-//     color: String,
-//     category: String,
-//     season: String,
-//     size: Number,
-//     inCloset: Boolean,
-//     toRepair: Boolean,
-// }]
