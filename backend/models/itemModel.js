@@ -7,14 +7,14 @@ const itemSchema = mongoose.Schema(
             required: true,
             ref: 'User',
         },
-        name: {
+        text: {
             type: String,
             required: [true, 'Please add a name for the item'],
         },
-        color : {
-            type: String,
-            required: [true, 'Please add a color for the item'],
-        },
+        // color : {
+        //     type: String,
+        //     required: [true, 'Please add a color for the item'],
+        // },
         // category : {
         //     type: String,
         //     required: [true, 'Please add a category for the item'],
