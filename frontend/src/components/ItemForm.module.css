@@ -1,0 +1,21 @@
+
+
+
+
+.form {
+  width: 85%;
+  margin: 30px auto;
+}
+
+.formgroup {
+  margin-bottom: 0px 15px 10px;
+}
+
+.formgroupInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 0px 15px 10px;
+  font-family: inherit;
+}
