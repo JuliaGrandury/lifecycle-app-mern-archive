@@ -16,16 +16,14 @@ function Header() {
 
     return (
         <header className='header'>
-            <div className='logo'>
-                <Link to='/'>LifeCycle</Link>
-            </div>
+            <div className='logo'><Link to='/'>LifeCycle</Link></div>
             <ul>
                 {user ? (
                     <>
                         <li><NavLink>Closets</NavLink></li>
                         <li><NavLink>Outfits</NavLink></li>
                         <li><NavLink>Statistics</NavLink></li>
-                        <li><button className='btn' onClick={onLogout}><FaSignOutAlt /> Logout</button></li>
+                        <li><button className='btn' onClick={onLogout}>Logout</button></li>
                     </>
                 ) : (
                     <>

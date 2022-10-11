@@ -43,6 +43,7 @@ function Dashboard() {
     <>
       <section className="heading"><h1>Welcome to your closet {user && user.name}!</h1></section>
       <section className="action-bar">
+        {/* Add functionality to the tag buttons */}
         <button className={styles.tagBtn}>Tops</button>
         <button className={styles.tagBtn}>Bottoms</button>
         <button className={styles.tagBtn}>Dress + Jumpsuits</button>

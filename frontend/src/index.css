@@ -113,8 +113,8 @@ h3 {
 
 .form,
 .content {
-  width: 70%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 30px auto;
 }
 
 .form-group {
@@ -139,16 +139,18 @@ h3 {
 }
 
 .btn {
-  padding: 10px 20px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  background: #000;
-  color: #fff;
+  padding: 8px 10px;
+  /* border: 1px solid #000; */
+  /* border-radius: 5px; */
+  /* background: #000; */
+  /* color: #fff; */
+  /* appearance: button; */
+  /* font-weight: 700; */
+  border: none;
+  background: none;
   font-size: 16px;
-  font-weight: 700;
   cursor: pointer;
   text-align: center;
-  appearance: button;
   display: flex;
   align-items: center;
   justify-content: center;
