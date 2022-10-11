@@ -77,9 +77,9 @@ h3 {
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 0 20px;
 }
 
@@ -88,15 +88,17 @@ h3 {
 }
 
 .items {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
 .item {
-  background-color: #f4f4f4;
+  background-color: white;
+  border-radius: 5px;
   margin: 10px 0;
-  padding: 20px 0 10px;
+  padding: 20px 4px;
   position: relative;
 }
 
