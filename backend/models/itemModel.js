@@ -27,11 +27,11 @@ const itemSchema = mongoose.Schema(
             type: String,
             required: [true, 'Please add a season for the item'],
         },
-        incloset: {
+        inCloset: {
             type: Boolean,
             default: true,
         },
-        torepair: {
+        toRepair: {
             type: Boolean,
             default: false,
         }

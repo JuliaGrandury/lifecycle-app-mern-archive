@@ -42,8 +42,8 @@ const setItem = asyncHandler(async (req, res) => {
         color: req.body.color,
         category: req.body.category,
         season: req.body.season,
-        incloset: _default,
-        torepair: _default,
+        inCloset: req.body.inCloset,
+        toRepair: req.body.toRepair,
     })
 
     res.status(200).json(item)

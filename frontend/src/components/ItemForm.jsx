@@ -24,7 +24,7 @@ function ItemForm() {
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Add a Closet Item</label>
-                    <input type="text" name="text" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                    <input type="text" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)} />
                     <input type="text" name="color" id="color" value={color} onChange={(e) => setColor(e.target.value)} />
                     {/* Make the two following a dropdown menu */}
                     <input type="text" name="category" id="category" value={category} onChange={(e) => setCategory(e.target.value)} />

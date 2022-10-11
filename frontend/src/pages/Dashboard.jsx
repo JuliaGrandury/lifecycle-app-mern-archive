@@ -37,8 +37,7 @@ function Dashboard() {
   return (
     <>
       <section className="heading">
-        <h1>Welcome to your closet {user && user.name}</h1>
-        <p>Closet Items</p>
+        <h1>Welcome to your closet {user && user.name}!</h1>
       </section>
       <ItemForm />
       <section className="content">
