@@ -12,13 +12,12 @@ const getItems = asyncHandler(async (req, res) => {
     res.status(200).json(items)
 })
 
-// @desc Get items of specific user
-// @route GET /api/items/:category
+// @desc Get items of specific user and selected category
+// @route GET /api/items/search?category=X
 // @acces Private
-const getItemByCategory = asyncHandler(async (req, res) => {
-    const items = await Item.find({ user: req.user.id, category: req.query })
-    console.log(items)
-    // res.status(200).json(items)
+const getItemsByCategory = asyncHandler(async (req, res) => {
+    const items = await Item.find({ category: req.query.category })
+    res.status(200).json(items)
 })
 
 // @desc Set closet item
@@ -111,7 +110,7 @@ const deleteItem = asyncHandler(async (req, res) => {
 
 module.exports = {
     getItems,
-    getItemByCategory,
+    getItemsByCategory,
     setItem,
     updateItem,
     deleteItem,

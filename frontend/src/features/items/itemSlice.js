@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import itemService from './itemService'
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import itemService from './itemService';
 
 const initialState = {
     items: [],
@@ -30,6 +30,11 @@ export const getItems = createAsyncThunk('items/getAll', async (_, thunkAPI) => 
         return thunkAPI.rejectWithValue(message)
     }
 })
+
+// Get user closet items by category
+// export const getItemsByCategory = createAsyncThunk('items/getAllByCategory', async (_, thunkAPI) => {
+
+// })
 
 // Delete closet item
 export const deleteItem = createAsyncThunk('items/delete', async (id, thunkAPI) => {
@@ -83,7 +88,7 @@ export const itemSlice = createSlice({
                 state.isLoading = false
                 state.isSuccess = true
                 //to filter out the goal that was deleted instead of waiting for UI reload
-                state.items = state.items.filter((item) => item._id !==action.payload.id)
+                state.items = state.items.filter((item) => item._id !== action.payload.id)
             })
             .addCase(deleteItem.rejected, (state, action) => {
                 state.isLoading = false

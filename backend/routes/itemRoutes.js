@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const { getItems, setItem, updateItem, deleteItem, getItemByCategory } = require('../controllers/itemController');
+const { getItems, setItem, updateItem, deleteItem, getItemsByCategory } = require('../controllers/itemController');
 
 const { protect } = require('../middleware/authMiddleware')
 
-router.get('/', protect, getItems)
-// router.get('/:category', protect, getItemByCategory)
+router.get('/', protect, getItems).get('/search', protect, getItemsByCategory)
 router.post('/', protect, setItem)
 router.put('/:id', protect, updateItem)
 router.delete('/:id', protect, deleteItem)

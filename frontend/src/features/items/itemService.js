@@ -24,8 +24,8 @@ const getItems = async (token) => {
     return response.data
 }
 
-// Get user closet items
-// const getItemByCategory = async (categoryData, token) => {
+// Get user closet items based on category
+// const getItemsByCategory = async (categoryData, token) => {
 //     const config = {
 //         headers: {
 //             Authorization: `Bearer ${token}`,
@@ -49,7 +49,6 @@ const deleteItem = async (itemId, token) => {
 const itemService = {
     createItem,
     getItems,
-    // getItemByCategory,
     deleteItem
 }
 
