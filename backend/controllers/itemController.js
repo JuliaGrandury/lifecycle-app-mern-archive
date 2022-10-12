@@ -12,6 +12,14 @@ const getItems = asyncHandler(async (req, res) => {
     res.status(200).json(items)
 })
 
+// @desc Get items of specific user
+// @route GET /api/items/:category
+// @acces Private
+const getItemByCategory = asyncHandler(async (req, res) => {
+    const items = await Item.find({ category: req.body.category })
+    res.status(200).json(items)
+})
+
 // @desc Set closet item
 // @route POST /api/items
 // @acces Private
@@ -65,7 +73,7 @@ const updateItem = asyncHandler(async (req, res) => {
         throw new Error('User not found')
     }
     // Verify that logged in user and closet user match
-    if(item.user.toString() !== req.user.id) {
+    if (item.user.toString() !== req.user.id) {
         res.status(401)
         throw new Error('User not authorized')
     }
@@ -89,8 +97,9 @@ const deleteItem = asyncHandler(async (req, res) => {
         res.status(401)
         throw new Error('User not found')
     }
+
     // Verify that logged in user and closet user match
-    if(item.user.toString() !== req.user.id) {
+    if (item.user.toString() !== req.user.id) {
         res.status(401)
         throw new Error('User not authorized')
     }
@@ -101,6 +110,7 @@ const deleteItem = asyncHandler(async (req, res) => {
 
 module.exports = {
     getItems,
+    getItemByCategory,
     setItem,
     updateItem,
     deleteItem,

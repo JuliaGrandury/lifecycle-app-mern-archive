@@ -20,9 +20,10 @@ function Header() {
             <ul>
                 {user ? (
                     <>
-                        <li><NavLink>Closets</NavLink></li>
-                        <li><NavLink>Outfits</NavLink></li>
-                        <li><NavLink>Statistics</NavLink></li>
+                        <li><NavLink to='/closets'>Closets</NavLink></li>
+                        <li><NavLink to='/outfits'>Outfits</NavLink></li>
+                        <li><NavLink to='/statistics'>Statistics</NavLink></li>
+                        <li><NavLink to='/account'>Account</NavLink></li>
                         <li><button className='btn' onClick={onLogout}>Logout</button></li>
                     </>
                 ) : (

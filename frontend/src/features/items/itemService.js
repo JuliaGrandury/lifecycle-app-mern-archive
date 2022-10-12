@@ -24,6 +24,17 @@ const getItems = async (token) => {
     return response.data
 }
 
+// Get user closet items
+const getItemByCategory = async (token) => {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+    }
+    const response = await axios.get(API_URL, config)
+    return response.data
+}
+
 // Delete a closet item
 const deleteItem = async (itemId, token) => {
     const config = {
@@ -38,6 +49,7 @@ const deleteItem = async (itemId, token) => {
 const itemService = {
     createItem,
     getItems,
+    getItemByCategory,
     deleteItem
 }
 

@@ -3,10 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import ItemForm from '../components/ItemForm';
 import ItemComp from '../components/ItemComp';
-import Modal from '../components/Modal';
 import Spinner from '../components/Spinner';
 import { getItems, reset } from '../features/items/itemSlice';
-// import Products from '../components/Products.jsx';
 import styles from "./Dashboard.module.css";
 
 function Dashboard() {
@@ -16,7 +14,7 @@ function Dashboard() {
   const { user } = useSelector((state) => state.auth)
   const { items, isLoading, isError, message } = useSelector((state) => state.items)
 
-  // Modal to Add Closet Item
+  // State of modal to Add Closet Item
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -46,7 +44,7 @@ function Dashboard() {
         {/* Add functionality to the tag buttons */}
         <button className={styles.tagBtn}>Tops</button>
         <button className={styles.tagBtn}>Bottoms</button>
-        <button className={styles.tagBtn}>Dress + Jumpsuits</button>
+        <button className={styles.tagBtn}>Dresses + Jumpsuits</button>
         <button className={styles.tagBtn}>Coats + Jackets</button>
         <button className={styles.tagBtn}>Shoes</button>
         <button className={styles.tagBtn}>Accessories</button>

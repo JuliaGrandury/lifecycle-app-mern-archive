@@ -92,6 +92,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  z-index: 0;
 }
 
 .item {
@@ -100,6 +101,7 @@ h3 {
   margin: 10px 0;
   padding: 20px 4px;
   position: relative;
+  z-index: -1;
 }
 
 .item .close {
@@ -181,7 +183,7 @@ h3 {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5000;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;

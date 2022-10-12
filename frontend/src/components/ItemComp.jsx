@@ -1,5 +1,5 @@
-import { useDispatch } from 'react-redux'
-import { deleteItem } from '../features/items/itemSlice'
+import { useDispatch } from 'react-redux';
+import { deleteItem } from '../features/items/itemSlice';
 
 function ItemComp({ item }) {
     const dispatch = useDispatch()
@@ -18,4 +18,4 @@ function ItemComp({ item }) {
     )
 }
 
-export default ItemComp
+export default ItemComp;
