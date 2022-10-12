@@ -16,8 +16,9 @@ const getItems = asyncHandler(async (req, res) => {
 // @route GET /api/items/:category
 // @acces Private
 const getItemByCategory = asyncHandler(async (req, res) => {
-    const items = await Item.find({ category: req.body.category })
-    res.status(200).json(items)
+    const items = await Item.find({ user: req.user.id, category: req.query })
+    console.log(items)
+    // res.status(200).json(items)
 })
 
 // @desc Set closet item
